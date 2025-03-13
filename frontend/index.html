@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My storage system</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <input type="text" id="searchBar" placeholder="Search files..." oninput="filterFiles()">
+        </div>
+        <div class="nav-center">
+            <button class="nav-btn">Login</button>
+            <button class="nav-btn">Sign Up</button>
+            <button class="nav-btn">Settings</button>
+        </div>
+        <div class="nav-right">
+            <img src="assets/profile.jpeg" alt="Profile" class="profile-pic">
+        </div>
+    </nav>
+    <div class="container">
+        <h1>My Drive</h1>
+        <div class="storage-container">
+            <div class="storage-bar" id="storageBar"></div>
+            <span id="storageText">Storage: Loading...</span>
+        </div>
+        <div class="upload-section">
+            <label for="fileInput" class="custom-file-upload">Choose Files</label>
+            <input type="file" id="fileInput">
+            <button id="uploadBtn" onclick="uploadFile()">Upload Files</button>
+        </div>
+        <h2>My Files</h2>
+        <ul id="fileList" class="file-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

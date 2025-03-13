@@ -1,0 +1,165 @@
+body {
+    background-color: #121212;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1E1E1E;
+    padding: 15px 20px;
+}
+
+.nav-left input {
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #00A2FF;
+    background-color: #2A2A2A;
+    color: white;
+    font-size: 16px;
+}
+
+.nav-center {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    color: #00A2FF;
+}
+
+.nav-right .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container {
+    text-align: center;
+    background: #1E1E1E;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.1);
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+h1, h2 {
+    color: #00A2FF;
+}
+
+.storage-container {
+    background: #2A2A2A;
+    height: 25px;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    margin: 15px 0;
+}
+
+.storage-bar {
+    height: 100%;
+    width: 0%;
+    background: #00A2FF;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+#storageText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    color: white;
+}
+
+.upload-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#fileInput {
+    display: none;
+}
+
+.custom-file-upload {
+    background: linear-gradient(135deg, #00A2FF, #007BFF);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    display: inline-block;
+}
+
+.custom-file-upload:hover {
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+}
+
+#uploadBtn {
+    background: linear-gradient(135deg, #00A2FF, #007BFF);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#uploadBtn:hover {
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+}
+
+.file-list {
+    list-style: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    background: #2A2A2A;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.file-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.file-name {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.file-date {
+    color: #aaa;
+}
